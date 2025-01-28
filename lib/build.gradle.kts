@@ -95,14 +95,14 @@ publishing {
     publications {
         create<MavenPublication>("gpr") {
             from(components["java"])
-            groupId = "com.github.aronvaupel"
-            artifactId = "commons"
+            groupId = "com.github.S-A-Mi-O"
+            artifactId = "core"
             version = project.version.toString()
         }
     }
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/aronvaupel/Commons")
+            url = uri("https://maven.pkg.github.com/S-A-Mi-O/core")
             credentials {
                 val env = loadEnv()
                 username = env["GITHUB_USERNAME"] ?: ""
